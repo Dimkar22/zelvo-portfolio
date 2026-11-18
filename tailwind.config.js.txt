@@ -1,0 +1,37 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        zelvo: {
+          green: '#39FF8B',
+          dark: '#0B0B0B',
+          gray: '#1A2E21',
+          light: '#FFFFFF',
+        }
+      },
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+      },
+      // ✅ Анимации и keyframes должны быть ВНУТРИ extend
+      animation: {
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'spin-slow': 'spin 12s linear infinite',
+      },
+      keyframes: {
+        pulse: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '.7' },
+        },
+        spin: {
+          to: { transform: 'rotate(360deg)' },
+        }
+      }
+    },
+  },
+  plugins: [],
+}
