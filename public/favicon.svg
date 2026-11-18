@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title>ZELVO Favicon</title>
+  <!-- Белый фон для контраста -->
+  <rect width="512" height="512" fill="#0B0B0B" rx="64"/>
+  
+  <!-- Основной контур буквы Z -->
+  <path d="M92 112H420L398 205L215 307H391L369 400H84L106 307L289 205H70Z" 
+        fill="none" stroke="#39FF8B" stroke-width="34" stroke-linecap="square" stroke-linejoin="bevel"/>
+  
+  <!-- Белая акцентная линия сверху -->
+  <path d="M92 112H420" 
+        fill="none" stroke="#FFFFFF" stroke-opacity=".9" stroke-width="8" stroke-linecap="square"/>
+</svg>

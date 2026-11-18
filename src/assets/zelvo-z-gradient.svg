@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+<title id="title">ZELVO — Z symbol, gradient</title>
+<defs>
+<linearGradient id="zelvoGreen" x1="72" y1="70" x2="432" y2="442" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#A6FFCB"/>
+<stop offset=".48" stop-color="#39FF8B"/>
+<stop offset="1" stop-color="#00B85C"/>
+</linearGradient>
+<filter id="softGlow" x="-35%" y="-35%" width="170%" height="170%">
+<feGaussianBlur stdDeviation="13" result="blur"/>
+<feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.10  0 0 0 0 1  0 0 0 0 0.48  0 0 0 .42 0" result="glow"/>
+<feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+<path d="M106 126H406L390 194L208 318H382L365 390H105L121 321L303 198H90Z"
+fill="url(#zelvoGreen)" filter="url(#softGlow)" stroke="#D7FFE7" stroke-opacity=".42" stroke-width="3" stroke-linejoin="round"/>
+</svg>

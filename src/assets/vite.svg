@@ -1,0 +1,14 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [
+    react({
+      // ✅ Включаем обработку SVG как React компонентов
+      jsxRuntime: 'automatic', 
+    })
+  ],
+  base: '/zelvo-portfolio/',
+  // ✅ Явно указываем, что .svg?react нужно обрабатывать особым образом
+  assetsInclude: ['**/*.svg'],
+})

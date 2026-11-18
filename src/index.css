@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+
+@theme {
+  --color-zelvo-green: #39FF8B;
+  --color-zelvo-dark: #0B0B0B;
+  --color-zelvo-gray: #1A2E21;
+  --color-zelvo-light: #FFFFFF;
+  --font-sans: 'Montserrat', sans-serif;
+  
+  /* ✅ Кастомные анимации */
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-spin-slow: spin 12s linear infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .7; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-zelvo-dark);
+    color: var(--color-zelvo-light);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-zelvo-green);
+    color: var(--color-zelvo-dark);
+  }
+
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: var(--color-zelvo-dark); }
+  ::-webkit-scrollbar-thumb { background: var(--color-zelvo-green); border-radius: 9999px; }
+  
+  html { scroll-behavior: smooth; }
+}
